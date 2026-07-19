@@ -1,14 +1,14 @@
 export const company = {
-  name: "MAA PARTNERS LLC",
-  tagline: "Everyday Value. Premium Selection.",
+  name: "ONE AHMAD ECOM LLC",
+  tagline: "Curated Products. Elevated Living.",
   description:
-    "MAA PARTNERS LLC is a modern family-friendly marketplace for electronics, home essentials, beauty, toys, fashion, pet care, and everyday finds selected for value, quality, and convenience.",
-  email: "maapartnersllc1@gmail.com",
+    "ONE AHMAD ECOM LLC is a carefully curated marketplace for electronics, home, beauty, fashion, and everyday essentials — selected for quality, design, and elevated living rather than discount volume.",
+  email: "oneahmadecomllc@gmail.com",
   address: {
-    street: "1995 HAMPTON INN CT",
-    city: "WINSTON-SALEM",
-    state: "NC",
-    zip: "",
+    street: "4545 CENTER BLVD APT 2413",
+    city: "LONG ISLAND CITY",
+    state: "NY",
+    zip: "11109",
     country: "United States",
   },
   social: {
@@ -18,5 +18,5 @@ export const company = {
     pinterest: "",
   },
   hours: "Mon–Fri: 9am–6pm EST",
-  copyright: `© ${new Date().getFullYear()} MAA PARTNERS LLC. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} ONE AHMAD ECOM LLC. All rights reserved.`,
 };

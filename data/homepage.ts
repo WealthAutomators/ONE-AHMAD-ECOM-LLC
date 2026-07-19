@@ -8,13 +8,65 @@ export const heroSlides: HeroSlide[] = [
   {
     id: "1",
     image: "/hero/hero-1.jpg",
-    headline: "Find More. Spend Less.",
-    description:
-      "Discover top-rated electronics, home essentials, beauty products, toys and more, all in one trusted marketplace.",
+    headline: "Modern Living",
+    description: "Refined essentials for spaces that feel calm, considered, and current.",
+    ctaText: "Shop Home",
+    ctaLink: "/categories/home-kitchen",
+  },
+  {
+    id: "2",
+    image: "/hero/hero-2.jpg",
+    headline: "Technology Essentials",
+    description: "Quietly powerful gadgets designed for everyday performance.",
+    ctaText: "Shop Electronics",
+    ctaLink: "/categories/electronics",
+  },
+  {
+    id: "3",
+    image: "/hero/hero-3.jpg",
+    headline: "Home Refresh",
+    description: "Thoughtful updates that elevate kitchens, baths, and living rooms.",
+    ctaText: "Explore Collection",
+    ctaLink: "/categories",
+  },
+  {
+    id: "4",
+    image: "/hero/hero-4.jpg",
+    headline: "Everyday Luxury",
+    description: "Curated pieces that bring a sense of ease to daily rituals.",
     ctaText: "Shop Now",
     ctaLink: "/shop",
-    secondaryCtaText: "Browse Deals",
-    secondaryCtaLink: "/shop?sale=true",
+  },
+];
+
+export const featuredCollections = [
+  {
+    id: "1",
+    label: "Living",
+    title: "Modern Interiors",
+    href: "/categories/home-kitchen",
+    image: "/banners/collection-1.jpg",
+  },
+  {
+    id: "2",
+    label: "Tech",
+    title: "Connected Living",
+    href: "/categories/electronics",
+    image: "/banners/collection-2.jpg",
+  },
+  {
+    id: "3",
+    label: "Wellness",
+    title: "Ritual & Restore",
+    href: "/categories/health-wellness",
+    image: "/banners/collection-3.jpg",
+  },
+  {
+    id: "4",
+    label: "Style",
+    title: "Quiet Luxury",
+    href: "/categories/fashion-accessories",
+    image: "/banners/collection-4.jpg",
   },
 ];
 
@@ -22,89 +74,95 @@ export const features: Feature[] = [
   {
     id: "1",
     icon: "star",
-    title: "Premium Selection",
-    description: "A broad mix of household favorites, electronics, fashion, and family essentials chosen for dependable quality.",
+    title: "Curated Selection",
+    description: "Every product is chosen for quality, design, and lasting everyday use.",
   },
   {
     id: "2",
     icon: "shield",
-    title: "Secure Payments",
-    description: "Shop with confidence using a polished, encrypted checkout experience designed to keep every order secure.",
+    title: "Secure Checkout",
+    description: "A polished, encrypted checkout experience designed for peace of mind.",
   },
   {
     id: "3",
     icon: "truck",
-    title: "Fast Delivery",
-    description: "From everyday staples to last-minute gifts, your orders move quickly with reliable shipping updates along the way.",
+    title: "Reliable Delivery",
+    description: "Orders ship promptly with clear tracking from warehouse to doorstep.",
   },
   {
     id: "4",
     icon: "rotate",
     title: "Easy Returns",
-    description: "Need to send something back? Our return process is simple, straightforward, and built around customer convenience.",
+    description: "A simple return process built around customer confidence and convenience.",
   },
 ];
 
 export const dealsEndTime = new Date(Date.now() + 1000 * 60 * 60 * 18).toISOString();
 
 export const homepageDealsSlugs = [
+  "ceramic-table-lamp",
+  "linen-throw-blanket",
+  "marble-serving-board",
   "wireless-earbuds",
-  "electric-kettle",
-  "air-fryer",
-  "dog-bed",
-  "sunglasses-classic",
-  "rgb-gaming-keyboard",
+  "yoga-mat",
+  "gaming-headset",
 ] as const;
 
 export const homepageTrendingSlugs = [
+  "ceramic-table-lamp",
+  "smart-humidifier",
+  "linen-throw-blanket",
+  "marble-serving-board",
+  "brass-desk-organizer",
+  "silk-pillowcase-set",
+  "matte-water-bottle",
   "wireless-earbuds",
-  "bluetooth-speaker",
-  "air-fryer",
-  "kids-learning-tablet",
-  "yoga-mat",
-  "gaming-headset",
-  "vitamin-c-serum-set",
-  "standing-desk-lamp",
 ] as const;
 
 export const homepageBestsellerSlugs = [
-  "wireless-earbuds",
+  "ceramic-table-lamp",
   "bluetooth-speaker",
   "bath-towel-set",
+  "linen-throw-blanket",
+  "marble-serving-board",
   "yoga-mat",
-  "kids-learning-tablet",
-  "coffee-grinder",
-  "dog-bed",
-  "electric-kettle",
+  "smart-humidifier",
+  "wireless-earbuds",
 ] as const;
 
 export const homepageFeaturedSlugs = [
+  "ceramic-table-lamp",
+  "smart-humidifier",
+  "linen-throw-blanket",
+  "marble-serving-board",
+  "brass-desk-organizer",
+  "silk-pillowcase-set",
+  "matte-water-bottle",
+  "sculptural-candle-set",
   "wireless-earbuds",
-  "electric-kettle",
   "bath-towel-set",
-  "kids-learning-tablet",
-  "standing-desk-lamp",
-  "air-fryer",
-  "yoga-mat",
-  "dog-bed",
-  "coffee-grinder",
-  "bluetooth-speaker",
 ] as const;
 
 export const homepageNewArrivalSlugs = [
-  "stem-robot-kit",
-  "vitamin-c-serum-set",
-  "baby-monitor",
-  "foam-roller",
-  "rgb-gaming-keyboard",
-  "controller-charging-dock",
+  "ceramic-table-lamp",
+  "smart-humidifier",
+  "linen-throw-blanket",
+  "marble-serving-board",
+  "brass-desk-organizer",
+  "silk-pillowcase-set",
+  "matte-water-bottle",
+  "sculptural-candle-set",
+  "woven-storage-baskets",
+  "minimal-wall-clock",
+  "oak-phone-stand",
+  "amber-glass-diffuser",
 ] as const;
 
 export const promotionalBanner: PromoBanner = {
   id: "1",
-  title: "Everything Your Family Needs",
+  title: "Designed Around Modern Life.",
   description:
-    "Quality products from every category delivered with convenience and value.",
+    "A carefully curated marketplace for elevated everyday living — not another discount retailer.",
   buttonText: "Explore Collection",
   buttonLink: "/categories",
   image: "/banners/featured.jpg",
@@ -113,9 +171,9 @@ export const promotionalBanner: PromoBanner = {
 export const featuredCollection = {
   title: "Featured Products",
   description:
-    "A curated mix of customer favorites across tech, home, wellness, family, and lifestyle essentials.",
+    "A rotating edit of standout pieces across home, tech, wellness, and lifestyle.",
   bannerImage: "/banners/featured.jpg",
-  categorySlug: "electronics",
+  categorySlug: "home-kitchen",
 };
 
 export const bestSellerTabs = [
@@ -127,9 +185,9 @@ export const bestSellerTabs = [
 ];
 
 export const newsletter = {
-  title: "Be First To Know About New Deals",
+  title: "Stay Inspired.",
   description:
-    "Join our mailing list and receive exclusive discounts, product launches and seasonal offers.",
+    "Receive curated collections, seasonal launches and exclusive offers.",
   placeholder: "Enter your email address",
   buttonText: "Subscribe",
 };
@@ -143,16 +201,31 @@ export const sortOptions = [
 ];
 
 export const aboutSection = {
-  title: "Everyday Value. Premium Selection.",
+  title: "Designed Around Modern Life.",
   description:
-    "MAA PARTNERS LLC brings together quality products across electronics, home, beauty, toys, wellness, and more so families can shop confidently from one trusted store. We focus on dependable selection, everyday value, and a warm, convenient experience from browse to checkout.",
+    "ONE AHMAD ECOM LLC is a carefully curated marketplace — not a discount warehouse. We gather refined essentials across home, technology, beauty, and lifestyle so modern living feels intentional, elevated, and effortless.",
   checklist: [
-    "Wide marketplace selection across 13 departments",
-    "Curated products for home, family, and lifestyle needs",
-    "Dependable delivery and simple returns",
-    "Friendly support focused on everyday shoppers",
+    "Curated marketplace across 13 departments",
+    "Quality-first selection for modern homes",
+    "Reliable delivery and simple returns",
+    "Support focused on thoughtful shopping",
   ],
-  buttonText: "Learn More About Us",
-  buttonLink: "/about",
+  buttonText: "Explore Collection",
+  buttonLink: "/categories",
   image: "/banners/about.jpg",
 };
+
+export const shopByCategorySlugs = [
+  "electronics",
+  "home-kitchen",
+  "bathroom",
+  "beauty",
+  "gaming",
+  "office-supplies",
+  "sports-outdoors",
+  "fashion-accessories",
+  "baby-products",
+  "pet-supplies",
+  "health-wellness",
+  "educational-toys",
+] as const;

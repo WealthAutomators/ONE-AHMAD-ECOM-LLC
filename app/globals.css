@@ -1,21 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8f8f8;
-  --foreground: #1e293b;
-  --primary: #8b1e3f;
+  --background: #fafaf8;
+  --foreground: #111827;
+  --primary: #111827;
   --primary-foreground: #ffffff;
-  --secondary: #f4a261;
-  --secondary-foreground: #1e293b;
-  --accent: #2a9d8f;
+  --secondary: #b88a44;
+  --secondary-foreground: #111827;
+  --accent: #6d28d9;
   --accent-foreground: #ffffff;
-  --emerald: #2a9d8f;
-  --muted: #f4efea;
-  --muted-foreground: #64748b;
-  --border: #e5e7eb;
-  --ring: #8b1e3f;
+  --muted: #f3f1ec;
+  --muted-foreground: #6b7280;
+  --border: #ececec;
+  --ring: #111827;
   --card: #ffffff;
-  --radius: 16px;
+  --radius: 4px;
 }
 
 @theme inline {
@@ -27,22 +26,38 @@
   --color-secondary-foreground: var(--secondary-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  --color-emerald: var(--emerald);
-  --color-teal: var(--emerald);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
   --color-ring: var(--ring);
   --color-card: var(--card);
-  --font-sans: var(--font-inter);
-  --radius-lg: 16px;
-  --radius-xl: 16px;
+  --font-sans: var(--font-manrope);
+  --font-heading: var(--font-cormorant);
+  --radius-lg: 4px;
+  --radius-xl: 4px;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-manrope), system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.011em;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-heading {
+  font-family: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  letter-spacing: -0.02em;
 }
 
 @keyframes accordion-down {
@@ -79,6 +94,11 @@ a {
   transition: color 0.2s ease;
 }
 
-a:hover {
-  color: var(--primary);
+@keyframes hero-progress {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.animate-hero-progress {
+  animation: hero-progress 6s linear forwards;
 }

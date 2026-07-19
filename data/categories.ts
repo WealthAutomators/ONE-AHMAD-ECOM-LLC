@@ -1,4 +1,9 @@
 import { Category } from "@/types";
+import { products } from "./products";
+
+function countFor(slug: string) {
+  return products.filter((p) => p.categorySlug === slug).length;
+}
 
 export const categories: Category[] = [
   {
@@ -7,15 +12,15 @@ export const categories: Category[] = [
     name: "Electronics",
     image: "/categories/electronics.jpg",
     description: "Smart gadgets, audio gear, and everyday tech essentials.",
-    productCount: 3,
+    productCount: countFor("electronics"),
   },
   {
     id: "2",
     slug: "home-kitchen",
     name: "Home & Kitchen",
     image: "/categories/home-kitchen.jpg",
-    description: "Appliances and tools to make home life easier.",
-    productCount: 3,
+    description: "Refined appliances and tools for elevated home living.",
+    productCount: countFor("home-kitchen"),
   },
   {
     id: "3",
@@ -23,23 +28,23 @@ export const categories: Category[] = [
     name: "Bathroom",
     image: "/categories/bathroom.jpg",
     description: "Towels, organizers, and bathroom essentials.",
-    productCount: 2,
+    productCount: countFor("bathroom"),
   },
   {
     id: "4",
     slug: "educational-toys",
     name: "Educational Toys",
     image: "/categories/educational-toys.jpg",
-    description: "Learning tools that make education fun.",
-    productCount: 2,
+    description: "Learning tools that make education engaging.",
+    productCount: countFor("educational-toys"),
   },
   {
     id: "5",
     slug: "pet-supplies",
-    name: "Pet Supplies",
+    name: "Pet",
     image: "/categories/pet-supplies.jpg",
     description: "Comfort and care products for your pets.",
-    productCount: 2,
+    productCount: countFor("pet-supplies"),
   },
   {
     id: "6",
@@ -47,7 +52,7 @@ export const categories: Category[] = [
     name: "Beauty",
     image: "/categories/beauty.jpg",
     description: "Skincare, hair care, and personal care favorites.",
-    productCount: 2,
+    productCount: countFor("beauty"),
   },
   {
     id: "7",
@@ -55,7 +60,7 @@ export const categories: Category[] = [
     name: "Sports",
     image: "/categories/sports-outdoors.jpg",
     description: "Gear for fitness, yoga, and outdoor activities.",
-    productCount: 2,
+    productCount: countFor("sports-outdoors"),
   },
   {
     id: "8",
@@ -63,7 +68,7 @@ export const categories: Category[] = [
     name: "Office",
     image: "/categories/office-supplies.jpg",
     description: "Desk accessories and workspace essentials.",
-    productCount: 2,
+    productCount: countFor("office-supplies"),
   },
   {
     id: "9",
@@ -71,7 +76,7 @@ export const categories: Category[] = [
     name: "Fashion",
     image: "/categories/fashion-accessories.jpg",
     description: "Accessories to complete your everyday look.",
-    productCount: 2,
+    productCount: countFor("fashion-accessories"),
   },
   {
     id: "10",
@@ -79,7 +84,7 @@ export const categories: Category[] = [
     name: "Baby",
     image: "/categories/baby-products.jpg",
     description: "Safe, thoughtful products for little ones.",
-    productCount: 2,
+    productCount: countFor("baby-products"),
   },
   {
     id: "11",
@@ -87,15 +92,15 @@ export const categories: Category[] = [
     name: "Toys & Games",
     image: "/categories/toys-games.jpg",
     description: "Fun for kids and families of all ages.",
-    productCount: 2,
+    productCount: countFor("toys-games"),
   },
   {
     id: "12",
     slug: "health-wellness",
-    name: "Health & Wellness",
+    name: "Health",
     image: "/categories/health-wellness.jpg",
     description: "Products to support your wellness routine.",
-    productCount: 2,
+    productCount: countFor("health-wellness"),
   },
   {
     id: "13",
@@ -103,7 +108,7 @@ export const categories: Category[] = [
     name: "Gaming",
     image: "/categories/gaming.jpg",
     description: "Headsets, peripherals, and accessories for every gamer.",
-    productCount: 4,
+    productCount: countFor("gaming"),
   },
 ];
 

@@ -26,26 +26,26 @@ export default function AboutPage() {
           </div>
           <PageSection title="Our Story">
             <p>
-              MAA PARTNERS LLC was founded with a simple goal: help households shop smarter by
-              bringing together dependable products from every major department in one trusted
-              marketplace. From electronics and home essentials to toys, beauty, fashion, and
-              gaming gear, we focus on everyday value without sacrificing quality.
+              ONE AHMAD ECOM LLC was founded on a quieter idea of retail: curate fewer, better
+              products across home, technology, beauty, fashion, and everyday essentials — so
+              modern living feels intentional rather than overwhelming. We are a carefully
+              curated marketplace, not a discount warehouse.
             </p>
             <p className="mt-4">
-              Based in Winston-Salem, North Carolina, we work with reliable suppliers to offer a
-              professional, family-friendly shopping experience. Every product in our catalog is
-              selected with care, and our team is committed to making browsing, ordering, and
-              returns feel simple and convenient.
+              Based in Long Island City, New York, we partner with trusted suppliers to bring
+              elevated essentials to discerning households. Every product is selected for design,
+              quality, and lasting use, and our team is committed to a calm, polished experience
+              from browse to doorstep.
             </p>
           </PageSection>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { icon: ShoppingBag, title: "Wide Selection", desc: "13 categories covering electronics, home, family, beauty, fitness, pets, and more." },
-            { icon: Award, title: "Premium Selection", desc: "Products are chosen for consistent quality, reliability, and practical everyday use." },
-            { icon: Heart, title: "Customer First", desc: "Friendly support, simple policies, and an easy returns experience shoppers can count on." },
-            { icon: Check, title: "Easy Shopping", desc: "One marketplace, one checkout, and a polished experience across every department." },
+            { icon: ShoppingBag, title: "Curated Selection", desc: "Thirteen departments spanning electronics, home, beauty, fitness, pets, and more." },
+            { icon: Award, title: "Quality First", desc: "Products chosen for design, reliability, and elevated everyday performance." },
+            { icon: Heart, title: "Customer Care", desc: "Thoughtful support, clear policies, and an easy returns experience." },
+            { icon: Check, title: "Effortless Shopping", desc: "One marketplace, one checkout, and a calm experience across every category." },
           ].map(({ icon: Icon, title, desc }) => (
             <div key={title} className="rounded-lg border border-border bg-card p-6 text-center shadow-sm">
               <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">

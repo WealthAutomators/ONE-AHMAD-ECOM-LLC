@@ -1,24 +1,49 @@
 import { NavLink } from "@/types";
 
-export const navigationLinks: NavLink[] = [
-  { label: "Home", href: "/" },
-  { label: "Shop", href: "/shop" },
+export const leftNavLinks: NavLink[] = [
   { label: "Collections", href: "/categories" },
-  { label: "Electronics", href: "/categories/electronics" },
-  { label: "Home", href: "/categories/home-kitchen" },
-  { label: "Fashion", href: "/categories/fashion-accessories" },
-  { label: "Deals", href: "/shop?sale=true" },
+  { label: "Shop", href: "/shop" },
+  { label: "New Arrivals", href: "/new-arrivals" },
+];
+
+export const rightNavLinks: NavLink[] = [
+  { label: "Journal", href: "/about" },
+  { label: "Support", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
 
-export const utilityBarLinks = [
-  { label: "Today's Deals", href: "/shop?sale=true" },
-  { label: "Free Returns", href: "/returns" },
-  { label: "Customer Support", href: "/faq" },
-  { label: "Order Tracking", href: "/track-order" },
+export const navigationLinks: NavLink[] = [
+  ...leftNavLinks,
+  ...rightNavLinks,
 ];
 
+export const utilityBarLinks: { label: string; href: string }[] = [];
+
 export const footerLinks = {
+  collections: [
+    { label: "Shop All", href: "/shop" },
+    { label: "Collections", href: "/categories" },
+    { label: "Electronics", href: "/categories/electronics" },
+    { label: "Home & Kitchen", href: "/categories/home-kitchen" },
+    { label: "Fashion", href: "/categories/fashion-accessories" },
+    { label: "Best Sellers", href: "/best-sellers" },
+    { label: "New Arrivals", href: "/new-arrivals" },
+  ],
+  company: [
+    { label: "About Us", href: "/about" },
+    { label: "Journal", href: "/about" },
+    { label: "Contact", href: "/contact" },
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "Terms & Conditions", href: "/terms" },
+  ],
+  support: [
+    { label: "FAQs", href: "/faq" },
+    { label: "Track Order", href: "/track-order" },
+    { label: "Shipping", href: "/shipping" },
+    { label: "Returns", href: "/returns" },
+    { label: "Refund Policy", href: "/refund" },
+  ],
+  // Legacy keys for any remaining references
   shop: [
     { label: "Shop All", href: "/shop" },
     { label: "Collections", href: "/categories" },
@@ -26,7 +51,7 @@ export const footerLinks = {
     { label: "Home & Kitchen", href: "/categories/home-kitchen" },
     { label: "Fashion", href: "/categories/fashion-accessories" },
     { label: "Best Sellers", href: "/best-sellers" },
-    { label: "Deals", href: "/shop?sale=true" },
+    { label: "New Arrivals", href: "/new-arrivals" },
   ],
   customerService: [
     { label: "Contact Us", href: "/contact" },

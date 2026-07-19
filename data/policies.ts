@@ -2,9 +2,9 @@ import { company } from "./company";
 
 export const faqItems = [
   {
-    question: "What types of products does MAA PARTNERS LLC sell?",
+    question: `What types of products does ${company.name} sell?`,
     answer:
-      "We offer a wide range of products across 13 categories including electronics, home & kitchen, bathroom essentials, beauty, educational toys, gaming, office, sports, fashion, baby, health, and pet supplies.",
+      "We offer a curated range of products across electronics, home & kitchen, bathroom, beauty, gaming, office, sports, fashion, baby, health, educational toys, and pet supplies — selected for quality and elevated everyday living.",
   },
   {
     question: "Do you offer free shipping?",
@@ -34,7 +34,7 @@ export const faqItems = [
   {
     question: "Are your products quality-checked?",
     answer:
-      "Absolutely. We partner with trusted suppliers and carefully curate every product in our marketplace. Each item is selected for quality, value, and reliability before being listed on our site.",
+      "Absolutely. We carefully curate every product in our marketplace. Each item is selected for quality, design, and reliability before being listed — we prioritize elevated living over volume discounting.",
   },
   {
     question: "How do I use a coupon code?",
@@ -55,7 +55,7 @@ export const faqItems = [
 
 export const shippingPolicy = {
   title: "Shipping Policy",
-  description: "Everything you need to know about how we deliver your MAA PARTNERS LLC orders.",
+  description: `Everything you need to know about how we deliver your ${company.name} orders.`,
   sections: [
     {
       title: "Processing Time",
@@ -90,7 +90,7 @@ export const shippingPolicy = {
 
 export const returnPolicy = {
   title: "Return Policy",
-  description: "We want you to love every MAA PARTNERS LLC purchase. If you're not satisfied, we're here to help.",
+  description: `We want you to love every ${company.name} purchase. If you're not satisfied, we're here to help.`,
   sections: [
     {
       title: "30-Day Return Window",
@@ -128,7 +128,7 @@ export const returnPolicy = {
 
 export const refundPolicy = {
   title: "Refund Policy",
-  description: "Our commitment to fair and transparent refunds for every MAA PARTNERS LLC order.",
+  description: `Our commitment to fair and transparent refunds for every ${company.name} order.`,
   sections: [
     {
       title: "Refund Eligibility",
@@ -163,7 +163,7 @@ export const refundPolicy = {
 
 export const privacyPolicy = {
   title: "Privacy Policy",
-  description: "Last updated: January 1, 2026. How MAA PARTNERS LLC collects, uses, and protects your information.",
+  description: `Last updated: January 1, 2026. How ${company.name} collects, uses, and protects your information.`,
   sections: [
     {
       title: "Information We Collect",
@@ -195,7 +195,7 @@ export const privacyPolicy = {
     {
       title: "Your Rights",
       content:
-        "You may request access to, correction of, or deletion of your personal data at any time by contacting us at " + company.email + ". North Carolina residents may also have rights under applicable state and federal privacy laws.",
+        "You may request access to, correction of, or deletion of your personal data at any time by contacting us at " + company.email + ". New York residents may also have rights under applicable state and federal privacy laws.",
     },
     {
       title: "Contact",
@@ -206,12 +206,12 @@ export const privacyPolicy = {
 
 export const termsPolicy = {
   title: "Terms & Conditions",
-  description: "Please read these terms carefully before using the MAA PARTNERS LLC website.",
+  description: `Please read these terms carefully before using the ${company.name} website.`,
   sections: [
     {
       title: "Acceptance of Terms",
       content:
-        "By accessing and using the MAA PARTNERS LLC website, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use our website.",
+        `By accessing and using the ${company.name} website, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use our website.`,
     },
     {
       title: "Products & Pricing",
@@ -226,17 +226,17 @@ export const termsPolicy = {
     {
       title: "Intellectual Property",
       content:
-        "All content on this website — including text, images, logos, and design — is the property of MAA PARTNERS LLC and protected by copyright and trademark laws. You may not reproduce, distribute, or use our content without written permission.",
+        `All content on this website — including text, images, logos, and design — is the property of ${company.name} and protected by copyright and trademark laws. You may not reproduce, distribute, or use our content without written permission.`,
     },
     {
       title: "Limitation of Liability",
       content:
-        "MAA PARTNERS LLC shall not be liable for any indirect, incidental, or consequential damages arising from your use of our website or products. Our total liability shall not exceed the amount you paid for the product in question.",
+        `${company.name} shall not be liable for any indirect, incidental, or consequential damages arising from your use of our website or products. Our total liability shall not exceed the amount you paid for the product in question.`,
     },
     {
       title: "Governing Law",
       content:
-        "These terms are governed by the laws of the State of North Carolina, United States. Any disputes shall be resolved in the courts serving Forsyth County, North Carolina.",
+        "These terms are governed by the laws of the State of New York, United States. Any disputes shall be resolved in the courts serving Queens County, New York.",
     },
   ],
 };
